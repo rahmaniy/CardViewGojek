@@ -12,7 +12,7 @@
         android:id="@+id/cv_harta_karun"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="8dp"
+        android:layout_marginHorizontal="16dp"
         android:layout_marginTop="8dp"
         app:cardCornerRadius="16dp"
         app:cardElevation="2dp"
@@ -53,7 +53,7 @@
             <ProgressBar
                 android:id="@+id/progress_bar"
                 android:layout_width="200dp"
-                android:layout_height="wrap_content"
+                android:layout_height="8dp"
                 android:layout_marginStart="8dp"
                 android:progressTint="@color/md_green_800"
                 android:progress="25"
@@ -61,6 +61,17 @@
                 app:layout_constraintStart_toEndOf="@id/iv_star"
                 app:layout_constraintTop_toBottomOf="@id/tv_xp_harta_karun"
                 app:layout_constraintBottom_toTopOf="@id/tv_harta_karun_hilang"/>
+
+            <ImageView
+                android:id="@+id/iv_hourglass"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="8dp"
+                android:src="@drawable/ic_hourglass"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@id/iv_star"
+                app:layout_constraintTop_toBottomOf="@id/progress_bar"/>
 
             <TextView
                 android:id="@+id/tv_harta_karun_hilang"
@@ -73,7 +84,7 @@
                 android:textSize="10sp"
                 android:fontFamily="sans-serif"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@id/iv_star"
+                app:layout_constraintStart_toEndOf="@id/iv_hourglass"
                 app:layout_constraintTop_toBottomOf="@id/progress_bar" />
 
             <ImageView
@@ -96,7 +107,7 @@
         android:layout_height="wrap_content"
         android:text="Akses cepat"
         android:fontFamily="sans-serif"
-        android:layout_marginHorizontal="8dp"
+        android:layout_marginHorizontal="16dp"
         android:layout_marginTop="16dp"
         android:textStyle="bold"
         android:textColor="@color/black"
@@ -109,7 +120,7 @@
         android:id="@+id/cv_akses_cepat"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="8dp"
+        android:layout_marginHorizontal="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="8dp"
         app:cardCornerRadius="16dp"
